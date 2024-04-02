@@ -49,7 +49,7 @@ This will guide you through enabling OIDC authentication Azure AD via a helm ins
  1. Click on the Azure Service: Azure Active Directory
  2. Under manage click groups -> new group. Group type: Security, Group name: odmAdmins, -> Create
  
- ![](https://github.ibm.com/Salvador-Alvarez/odm/blob/master/images/Screen%20Shot%202021-12-10%20at%203.27.23%20PM.png)
+ ![](https://github.com/salvarez1121/odm/blob/master/images/Screen%20Shot%202021-12-10%20at%203.27.23%20PM.png)
  
  3. Now go back to default directory and click users -> new user. Give the user a username, name, and add him to the OdmAdmins group -> Create
  
