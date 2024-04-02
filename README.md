@@ -94,7 +94,7 @@ This will guide you through enabling OIDC authentication Azure AD via a helm ins
  0. Go to your odm registered application and click the authentication tab. 
  1. Add platform -> Web -> Redirect URI: https://<route>/openid/redirect/odm 
  2. Enable Access Tokens and ID Tokens -> Configure
- 3. Add the Redirect URI for the Decision Server Console/Decision Center
+ 3. Add the Redirect URIs for your application
  
  ![](https://github.ibm.com/Salvador-Alvarez/odm/blob/master/odm-aad-sso/images/Screen%20Shot%202021-12-10%20at%205.02.41%20PM.png)
 
