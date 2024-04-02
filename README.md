@@ -49,27 +49,27 @@ This will guide you through enabling OIDC authentication Azure AD via a helm ins
  1. Click on the Azure Service: Azure Active Directory
  2. Under manage click groups -> new group. Group type: Security, Group name: odmAdmins, -> Create
  
- ![](https://github.com/salvarez1121/odm/blob/master/images/Screen%20Shot%202021-12-10%20at%203.27.23%20PM.png)
+ ![](https://github.com/salvarez1121/odm/blob/main/images/Screen%20Shot%202021-12-10%20at%203.27.23%20PM.png)
  
  3. Now go back to default directory and click users -> new user. Give the user a username, name, and add him to the OdmAdmins group -> Create
  
- ![](https://github.ibm.com/Salvador-Alvarez/odm/blob/master/images/Screen%20Shot%202021-12-10%20at%203.28.22%20PM.png)
+ ![](https://github.com/salvarez1121/odm/blob/main/images/Screen%20Shot%202021-12-10%20at%203.28.22%20PM.png)
  
  2. Now go back to default directory and click on App Registrations -> + New registration
  
- ![](https://github.ibm.com/Salvador-Alvarez/odm/blob/master/images/Screen%20Shot%202021-12-10%20at%202.27.16%20PM.png)
+ ![](https://github.com/salvarez1121/odm/blob/main/images/Screen%20Shot%202021-12-10%20at%202.27.16%20PM.png)
  
  3. Add the name and click register. 
  
- ![](https://github.ibm.com/Salvador-Alvarez/odm/blob/master/images/Screen%20Shot%202021-12-10%20at%202.34.23%20PM.png)
+ ![](https://github.com/salvarez1121/odm/blob/main/images/Screen%20Shot%202021-12-10%20at%202.34.23%20PM.png)
  
  4. This will register the application and AAD will provide Essentials and Endpoints that we will use to configure the auth-secret
  
- ![](https://github.ibm.com/Salvador-Alvarez/odm/blob/master/images/Screen%20Shot%202021-12-10%20at%202.36.45%20PM.png)
+ ![](https://github.com/salvarez1121/odm/blob/main/images/Screen%20Shot%202021-12-10%20at%202.36.45%20PM.png)
  
  5. We will now create the client secret. Click on Certificates and Secrets -> New client Secret. Give it the name **odm-secret** and expiration date. 
  
- ![](https://github.ibm.com/Salvador-Alvarez/odm/blob/master/odm-aad-sso/images/Screen%20Shot%202021-12-10%20at%204.42.49%20PM.png)
+ ![](https://github.com/salvarez1121/odm/blob/main/odm-aad-sso/images/Screen%20Shot%202021-12-10%20at%204.42.49%20PM.png)
  
  
  **authSecret Configuration**
@@ -99,4 +99,6 @@ This will guide you through enabling OIDC authentication Azure AD via a helm ins
  ![](https://github.ibm.com/Salvador-Alvarez/odm/blob/master/odm-aad-sso/images/Screen%20Shot%202021-12-10%20at%205.02.41%20PM.png)
 
  Now you can click on the route within Openshift and test! 
+
+ 
  
