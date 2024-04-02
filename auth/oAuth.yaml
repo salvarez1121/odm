@@ -1,0 +1,8 @@
+apiVersion: oauth.openshift.io/v1
+kind: OAuthClient
+grantMethod: auto
+metadata:
+  name: azure-ad
+redirectURIs:
+- https://login.microsoftonline.com/<directory-id>/oauth2/authorize 
+secret: "odm-secret"

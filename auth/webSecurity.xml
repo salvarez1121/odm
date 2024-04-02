@@ -1,0 +1,30 @@
+<server> 
+   <variable name="odmadmin" value="group:https://login.microsoftonline.com/<directory-id>/v2.0/<group-id>"/>
+   <variable name="resadmin" value="group:https://login.microsoftonline.com/<directory-id>/v2.0/<group-id>"/>
+
+   <basicRegistry id="basic" realm="basic">
+     <user name="resExecutor" password="resExecutor"/>
+     <group name="basicResExecutors">
+       <member name="resExecutor" />
+     </group>
+   </basicRegistry>
+
+   <variable name="odm.rtsAdministrators.group1" value="${odmadmin}"/>
+
+   <variable name="odm.rtsInstallers.group1" value="${odmadmin}"/>
+
+   <variable name="odm.rtsConfigManagers.group1" value="${odmadmin}"/>
+
+   <variable name="odm.resAdministrators.group1" value="${odmadmin}"/>
+   <variable name="odm.resAdministrators.group2" value="${resadmin}"/>
+
+   <variable name="odm.resDeployers.group1" value="${odmadmin}"/>
+
+   <variable name="odm.resMonitors.group1" value="${odmadmin}"/>
+
+   <variable name="odm.resExecutors.group1" value="${odmadmin}"/>
+   <variable name="odm.resExecutors.group2" value="group:basic/basicResExecutors"/>
+   <variable name="odm.resExecutors.group3" value="group:https://login.microsoftonline.com/<directory-id>/v2.0/<group-id>"/>
+   <variable name="odm.resExecutors.user3" value="<oid-value>"/>
+  
+</server> 

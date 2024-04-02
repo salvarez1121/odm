@@ -1,0 +1,12 @@
+<server>
+  <openidConnectClient authFilterRef="browserAuthFilter" id="odm" scope="openid"
+                       clientId="<ApplicationID>" clientSecret="<client-secret-value>"
+                       signatureAlgorithm="RS256" inboundPropagation="supported" groupIdentifier="groups" userIdentifier="email" 
+                       discoveryEndpointUrl="https://login.microsoftonline.com/<directoryid>/v2.0/.well-known/openid-configuration" />
+  <openidConnectClient authFilterRef="apiAuthFilter" id="odmapi" scope="openid"
+                       clientId="<ApplicationID>" clientSecret="<client-secret-value>"
+                       signatureAlgorithm="RS256" inboundPropagation="required" groupIdentifier="groups" userIdentifier="oid" 
+                       httpsRequired="true" audiences="ALL_AUDIENCES" tokenReuse="true" userIdentityToCreateSubject="unique_name"
+                       discoveryEndpointUrl="https://sts.windows.net/<directoryid>/v2.0/.well-known/openid-configuration"
+                       issuerIdentifier="https://sts.windows.net/<directoryid>/" />
+</server>
